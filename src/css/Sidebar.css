@@ -1,0 +1,50 @@
+/* Sidebar Container */
+.sidebar-container {
+    height: 100vh;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+/* Expanded and Collapsed States */
+.sidebar.expanded {
+    width: 250px;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    width: 100%;
+    text-align: left;
+    background-color: #343a40;
+    border: none;
+    color: white;
+}
+
+.toggle-btn:hover {
+    background-color: #495057;
+}
+
+/* Menu Items */
+.menu-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.menu-label {
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed .menu-label {
+    display: none;
+}
